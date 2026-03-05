@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROBABILIDAD</title>
+
+<!-- Bulma CSS -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+<text y='.9em' font-size='90'>🎲</text>
+</svg>">
+
+<style>
+:root{
+  --primary:#2f5755;
+  --primary-dark:#244443;
+}
+
+body{ background-color:#f4f7f7; }
+
+
+.hero.is-primary{
+  background-color:var(--primary);
+}
+
+.hero.is-small{ padding:2rem 1.5rem; }
+
+.tabs.is-toggle li.is-active a{
+  background-color:var(--primary);
+  border-color:var(--primary);
+  color:white;
+}
+
+.card{ border-left:4px solid var(--primary); }
+
+.card:hover{ transform:translateY(-3px); transition:0.2s ease; }
+
+.hero-image{
+  position:absolute;
+  right:3%;
+  top:50%;
+  transform:translateY(-50%);
+  opacity:0.35;
+  width:260px;
+}
+
+
+.article-title{
+  color:var(--primary);
+  font-weight:600;
+}
+
+.article-title:hover{ text-decoration:underline; }
+
+</style>
+</head>
+
+<body>
+
+<!-- Banner -->
+<section class="hero is-primary" style="max-width:700px;margin:1.5rem auto;border-radius:8px;position:relative;">
+  <img src="./assets/images/home/banner.01.png" alt="Dados y probabilidad" style="position:absolute;left:-310px;top:50%;transform:translateY(-50%);max-width:290px;">
+  <img src="./assets/images/home/banner.02.png" alt="Tablero de Galton" style="position:absolute;right:-292px;top:110%;transform:translateY(-50%);max-width:260px;">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-2">PROBABILIDAD</h1>
+    <p class="subtitle">Greetings to all Probability enthusiasts</p>
+  </div>
+</section>
+
+
+<section class="section">
+<div class="container">
+
+<section class="intro" style="position:relative;max-width:700px;margin:0 auto;">
+
+  <!-- Foto lateral alineada con los dados -->
+<figure style="
+  position:absolute;
+  left:-245px;
+  top:-50px
+">
+  <img src="./assets/images/home/rvi.03.png" width="213" alt="Foto de la persona">
+  <figcaption style="font-size:0.85rem;margin-top:0.5rem;">
+         Ricardo Vélez Ibarrola (2009)
+  </figcaption>
+</figure>
+
+  <!-- Texto lead -->
+  <div class="columns mb-6" style="margin-top:-1rem;">
+    <div class="column is-12">
+      <div class="content is-medium has-text-justified">
+        <p>
+          Como profesor del área de Cálculo de Probabilidades y Estadística, he tenido ocasión
+          de impartir diversos Cursos y Conferencias sobre temas  relacionados casi siempre con la 
+          Teoría de la Probabilidad y los Procesos Estocásticos. Los incluyo en este sitio como
+           legado para todos los entusiastas de la Probabilidad, de habla hispana,  que quieran utilizarlos.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Tabs -->
+<div class="tabs is-toggle is-centered">
+  <ul>
+    <li class="is-active" data-tab="cursos"><a>Cursos y Conferencias</a></li>
+    <li data-tab="textos"><a>Textos Docentes</a></li>
+    <li data-tab="articulos"><a>Artículos/Probabilidad</a></li>
+  </ul>
+</div>
+
+
+<!-- CURSOS -->
+<div id="cursos" class="tab-content">
+<div class="columns">
+<div class="column is-12">
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/01.cara-cruz.pdf" class="article-title" target="_blank">El juego de Cara y Cruz</a><br>
+<strong>Autor:</strong> R. Vélez— <strong>Año:</strong> 1992
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/02.convergencia-debil.pdf" class="article-title" target="_blank">Convergencia Débil</a><br>
+<strong>Autor:</strong> R. Vélez— <strong>Año:</strong> 2017
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/03.esquemas-urnas.pdf" class="article-title" target="_blank">Esquemas de urnas. Intrecambiabilidad y Martingalas</a><br>
+<strong>Autor:</strong> R. Vélez— <strong>Año:</strong> 2016
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/04.borel-cantelli.pdf" class="article-title"  target="_blank">Un lema tipo Borel-Cantelli y Aplicación a los Records</a><br>
+<strong>Autor:</strong> R. Vélez — <strong>Año:</strong> 2018
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/05.feller.pdf" class="article-title"  target="_blank">Leyes Débiles de los Grandes Números de Feller</a><br>
+<strong>Autor:</strong> R. Vélez — <strong>Año:</strong> 2017
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/06.modelos-urnas.pdf" class="article-title"  target="_blank">Leyes límites de Modelos de urnas</a><br>
+<strong>Autor:</strong> R. Vélez — <strong>Año:</strong> 2016
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/07.tipos-puros.pdf" class="article-title"  target="_blank">Ley de los Tipos Puros de Jessen - Wintner</a><br>
+<strong>Autor:</strong> R. Vélez — <strong>Año:</strong> 2017
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/08.recorridos-aleatorios.pdf" class="article-title"  target="_blank">Recorridos aleatorios</a><br>
+<strong>Autor:</strong> R. Vélez — <strong>Año:</strong> 2017
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/09.movimiento-browniano.pdf" class="article-title"  target="_blank">Introducción al Movimiento Browniano</a><br>
+<strong>Autor:</strong> R. Vélez — <strong>Año:</strong> 2009
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/10.movimiento-browniano.pdf" class="article-title" target="_blank">Conferencia sobre Movimiento Browniano</a><br>
+<strong>Autor:</strong> R. Vélez — <strong>Año:</strong> 2005
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/11.fisica-estadistica.pdf" class="article-title"  target="_blank">Introducción a la Física Estadística</a><br>
+<strong>Autor:</strong> R. Vélez — <strong>Año:</strong> 1998
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/12.black-scholes.pdf" class="article-title"  target="_blank">Introducción a la Valoración de Opciones</a><br>
+<strong>Autor:</strong> R. Vélez — <strong>Año:</strong> 2004
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/13.modelos-financieros.pdf" class="article-title"  target="_blank">Modelos Financieros en tiempo discreto</a><br>
+<strong>Autor:</strong> R. Vélez — <strong>Año:</strong> 2006
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/cursos/14.girsanov.pdf" class="article-title"  target="_blank">Teorema de Girsanov. Representación de Martingalas. Aplicación a los Modelos Financieros</a><br>
+<strong>Autor:</strong> R. Vélez — <strong>Año:</strong> 2006
+</div></div>
+
+</div>
+</div>
+</div>
+
+
+
+<!-- TEXTOS DOCENTES-->
+<div id="textos" class="tab-content" style="display:none;">
+<div class="columns"><div class="column is-12">
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/textos/01.probabilidades-1.pdf" class="article-title"  target="_blank">Cálculo de Probabilidades 1</a><br>
+<strong>Autores:</strong> Ricardo Vélez - Víctor Hernández — <strong>Editorial:</strong> UNED— <strong>Año:</strong> 2011
+<img src="./assets/images/documents/01.probabilidades-1.png" alt="PDF"
+ <span style="
+      position:absolute;
+      right:1rem;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:1.5rem;
+      opacity:0.7;
+    ">
+    </span>
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/textos/02.probabilidades-2.pdf" class="article-title"  target="_blank">Cálculo de Probabilidades 2</a><br>
+<strong>Autor:</strong> Ricardo Vélez — <strong>Editorial:</strong> UNED— <strong>Año:</strong> 2019
+<img src="./assets/images/documents/02.probabilidades-2.png" alt="PDF"
+ <span style="
+      position:absolute;
+      right:1rem;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:1.5rem;
+      opacity:0.7;
+    ">
+    </span>
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/textos/03.procesos.pdf" class="article-title"  target="_blank">Procesos Estocásticos</a><br>
+<strong>Autores:</strong> Ricardo Vélez - Tomás Prieto — <strong>Editorial:</strong> UNED— <strong>Año:</strong> 2024
+<img src="./assets/images/documents/03.procesos.png" alt="PDF"
+ <span style="
+      position:absolute;
+      right:1rem;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:1.5rem;
+      opacity:0.7;
+    ">
+    </span>
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/textos/04.problemas-probabilidad.pdf" class="article-title"  target="_blank">Problemas y Ejercicios de la Teoría de la Probabilidad</a><br>
+<strong>Autores:</strong> Víctor Hernández - Juan Romo - Ricardo Vélez — <strong>Editorial:</strong> UNED— <strong>Año:</strong> 1989
+<img src="./assets/images/documents/04.probabilidad.png" alt="PDF"
+ <span style="
+      position:absolute;
+      right:1rem;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:1.5rem;
+      opacity:0.7;
+    ">
+    </span>
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/textos/05.dados.pdf" class="article-title"  target="_blank">Dados, Monedas y Urnas. Introducción al Cálculo de Probabilidades</a><br>
+<strong>Autores:</strong> Víctor Hernández - Ricardo Vélez — <strong>Editorial:</strong> UNED— <strong>Año:</strong> 1992
+<img src="./assets/images/documents/05.dados-monedas.png" alt="PDF"
+ <span style="
+      position:absolute;
+      right:1rem;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:1.5rem;
+      opacity:0.7;
+    ">
+    </span>
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/textos/06.inferencia.pdf" class="article-title"  target="_blank">Principios de Inferencia Estadística</a><br>
+<strong>Autores:</strong> Ricardo Vélez - Alfonso García — <strong>Editorial:</strong> UNED— <strong>Año:</strong> 2012
+<img src="./assets/images/documents/06.inferencia.png" alt="PDF"
+ <span style="
+      position:absolute;
+      right:1rem;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:1.5rem;
+      opacity:0.7;
+    ">
+    </span>
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/textos/07.decision.pdf" class="article-title"  target="_blank">Introducción a la Teoría de la Decisión </a><br>
+<strong>Autor:</strong> Ricardo Vélez  — <strong>Editorial:</strong> UNED— <strong>Año:</strong> 2012
+<img src="./assets/images/documents/07.decision.png" alt="PDF"
+ <span style="
+      position:absolute;
+      right:1rem;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:1.5rem;
+      opacity:0.7;
+    ">
+    </span>
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/textos/08.ambientales.pdf" class="article-title"  target="_blank">Modelos Matemáticos en Ciencias Ambientales</a><br>
+<strong>Autores:</strong> Víctor Hernández - Eduardo Ramos - Ricardo Vélez — <strong>Editorial:</strong> Sanz y Torres— <strong>Año:</strong> 2012
+<img src="./assets/images/documents/08.modelos.png" alt="PDF"
+ <span style="
+      position:absolute;
+      right:1rem;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:1.5rem;
+      opacity:0.7;">
+    </span>
+</div></div>
+
+</div></div>
+</div>
+
+
+
+<!-- ARTICULOS -->
+<div id="articulos" class="tab-content" style="display:none;">
+<div class="columns"><div class="column is-12">
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/01.finetti.pdf" class="article-title"  target="_blank">De Finetti's-type results  for some families of non identically distributed random variables</a><br>
+<strong>Autores:</strong> R. Vélez - T. Prieto-Rumeau — <strong>Año:</strong> 2009 — <strong>Revista:</strong> Electronic Journal of Probability
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/02.finetti.pdf" class="article-title"  target="_blank">De Finetti-type Theorems for nonexchangeable 0-1 Random Variables</a><br>
+<strong>Autores:</strong> R. Vélez - T. Prieto-Rumeau — <strong>Año:</strong> 2010 — <strong>Revista:</strong>  Test
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/03.finetti.pdf" class="article-title"  target="_blank">De Finetti-type theorems for random selection processes. 
+Necessary and sufficient conditions</a><br>
+<strong>Autor:</strong> R. Vélez - T. Prieto-Rumeau — <strong>Año:</strong> 2010 — <strong>Revista:</strong>Journal of Mathematical Analysis and Applications
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/04.finetti.pdf" class="article-title"  target="_blank">A De Finetti-type Theorem for nonexchangeable finite-valued Random Variables</a><br>
+<strong>Autores:</strong> R. Vélez - T. Prieto-Rumeau — <strong>Año:</strong> 2008 — <strong>Revista:</strong>Journal of Mathematical Analysis and Applications
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/05.assignment.pdf" class="article-title"  target="_blank">Random assignment processes: strong law of large numbers and De Finetti theorem</a><br>
+<strong>Autores:</strong> R. Vélez - T. Prieto-Rumeau — <strong>Año:</strong> 2008 — <strong>Revista:</strong> Test
+</div></div>
+
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/06.assignment.pdf" class="article-title"  target="_blank">Random assignment processes</a><br>
+<strong>Autores:</strong> R. Vélez - T. Prieto-Rumeau — <strong>Año:</strong> 2012 — <strong>Revista:</strong> 2^{nd} Annual Conference on Operation Research and Statistics (ORS 2012)
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/07.increments.pdf" class="article-title"  target="_blank">Conditinally independent increment Point Processes</a><br>
+<strong>Autores:</strong> R. Vélez - T. Prieto-Rumeau — <strong>Año:</strong> 2011 — <strong>Revista:</strong>  Journal of Applied Probability
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/08.urn.pdf" class="article-title"  target="_blank">Limit behavior of Polya Urn schemes</a><br>
+<strong>Autores:</strong> R. Vélez - T. Prieto-Rumeau — <strong>Año:</strong> 2018 — <strong>Revista:</strong>  Studies in Systems,
+Decision and Control, vol 142. Springer.
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/09.urn.pdf" class="article-title"  target="_blank"> Almost sure convergence of Polya urn schemes</a><br>
+<strong>Autor:</strong> R. Vélez  — <strong>Año:</strong> 2021 — <strong>Revista:</strong>  arXiv:2101.00900 
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/10.bandit.pdf" class="article-title"  target="_blank"> Multi-Armed Bandit Processes with optimal Selection of Operating Times</a><br>
+<strong>Autor:</strong> P. Ibarrola - R. Vélez  — <strong>Año:</strong> 2005 — <strong>Revista:</strong>  Test 
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/11.series.pdf" class="article-title"  target="_blank">A new approach to Series of Random Variables</a><br>
+<strong>Autor:</strong> R. Vélez  — <strong>Año:</strong> 2001 — <strong>Revista:</strong> Test
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/12.vaiid.pdf" class="article-title"  target="_blank">Sumas de productos de Variables Aleatorias Independientes e Igualmente distribuidas</a><br>
+<strong>Autores:</strong> R. Vélez - V. Hernández  — <strong>Año:</strong> 1986 — <strong>Revista:</strong> Trabajos de Estadística
+</div></div>
+
+<div class="card mb-4"><div class="card-content">
+<a href="./assets/documents/articulos/13.recorridos.pdf" class="article-title"  target="_blank">Recorridos aleatorios simples en tiempo continuo</a><br>
+<strong>Autor:</strong> R. Vélez  — <strong>Año:</strong> 1983 — <strong>Revista:</strong> Trabajos de Estadística y de Investigación Operativa
+</div></div>
+
+</div></div>
+</div>
+
+</div>
+</section>
+
+<script>
+const tabs = document.querySelectorAll(".tabs ul li");
+const contents = document.querySelectorAll(".tab-content");
+
+tabs.forEach(tab=>{
+  tab.addEventListener("click", ()=>{
+    tabs.forEach(t=>t.classList.remove("is-active"));
+    tab.classList.add("is-active");
+    contents.forEach(c=>c.style.display="none");
+    document.getElementById(tab.dataset.tab).style.display="block";
+  });
+});
+</script>
+
+<footer class="footer has-background-dark has-text-white has-text-centered">
+© 2026 Repositorio de Probabilidad
+</footer>
+
+</body>
+</html>
